@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout CSS</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin:0;
+            font-family: Arial;
+        }
+
+        .header{
+            background-color: lightblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .row{
+            display: flex;
+        }
+
+        .column{
+            flex: 1;
+            padding: 20px;
+            height: 300px;
+        }
+
+        .left{
+            background-color: #f4cccc;
+        }
+
+        .middle{
+            background-color: #d9ead3;
+        }
+
+        .right{
+            background-color: #cfe2f3;
+        }
+
+        .footer{
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        HEADER
+    </div>
+
+    <div class="row">
+
+        <div class="column left">
+            MENU
+        </div>
+
+        <div class="column middle">
+            CONTENT
+        </div>
+
+        <div class="column right">
+            SIDEBAR
+        </div>
+
+    </div>
+
+    <div class="footer">
+        FOOTER
+    </div>
+
+</body>
+</html>
